@@ -1,0 +1,30 @@
+<div class="container"><h1>{{titulo}}</h1>
+<button class="btn btn-info" type="button"[routerLink]="['/terapeutas/form']">Nuevo terapeuta</button>
+<hr/>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cédula</th>
+            <th scope="col">Email</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Observacion</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let terapeuta of terapeutas">
+            <th scope="row">{{terapeuta.id}}</th>
+            <td>{{terapeuta.nombre}}</td>
+            <td>{{terapeuta.cedula}}</td>
+            <td>{{terapeuta.email}}</td>
+            <td>{{terapeuta.celular}}</td>
+            <td>{{terapeuta.observacion}}</td>
+            <td><button type="button" name="button" class="btn btn-primary" [routerLink]="['/terapeutas/form',terapeuta.id]">Editar</button></td>
+            <td><button type="button" name="eliminar" class="btn btn-danger" (click)=delete(terapeuta)>Eliminar</button></td>
+        </tr>
+    </tbody>
+  </table>
+</div>

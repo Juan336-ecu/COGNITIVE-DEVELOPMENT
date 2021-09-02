@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="card-body">
+        <h5 class="card-title">
+            {{titulo}}
+        </h5>
+        <form>
+            <div class="form-groip row">
+                <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nombre"[(ngModel)]="terapeuta.nombre">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="cedula" class="col-form-label col-sm-2">Cedula</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="cedula"[(ngModel)]="terapeuta.cedula">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="email" class="col-form-label col-sm-2">email</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="email"[(ngModel)]="terapeuta.email">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="celular" class="col-form-label col-sm-2">Celular</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="celular"[(ngModel)]="terapeuta.celular">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="observacion" class="col-form-label col-sm-2">Observacion</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="observacion"[(ngModel)]="terapeuta.observacion">
+                </div>
+            </div>
+
+            <button class="btn btn-success" role="button" (click)='create()' *ngIf="!terapeuta.id else elseBlock">Registrar</button>
+            <ng-template #elseBlock>
+                <button class="btn btn-success" role="button" (click)='update()'>Actualizar</button>
+            </ng-template>
+
+        </form>
+    </div>
+</div>
