@@ -1,1 +1,72 @@
-<p>pacientes works!</p>
+<div class="container"><h1>{{titulo}}</h1>
+<button class="btn btn-info" type="button"[routerLink]="['/pacientes/form']">Nuevo Paciente</button>
+<hr/>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">terapeuta</th>
+            <th scope="col">nombre</th>
+            <th scope="col">domicilio</th>
+            <th scope="col">fecha_naciemiento</th>
+            <th scope="col">instruccion</th>
+            <th scope="col">ocupacion_anterior</th>
+            <th scope="col">pasatiempo</th>
+            <th scope="col">fecha_ingreso</th>
+            <th scope="col">motivo_ingreso</th>
+            <th scope="col">estado_civil</th>
+            <th scope="col">nombre_conyuge</th>
+            <th scope="col">celular_conyuge</th>
+            <th scope="col">nombre_familiar_1</th>
+            <th scope="col">parentesco_familiar_1</th>
+            <th scope="col">direccion_familiar_1</th>
+            <th scope="col">celular_familiar_1</th>
+            <th scope="col">nombre_familiar_2</th>
+            <th scope="col">parentesco_familiar_2</th>
+            <th scope="col">direccion_familiar_2</th>
+            <th scope="col">celular_familiar_2</th>
+            <th scope="col">diagnostico</th>
+            <th scope="col">medicamento</th>
+            <th scope="col">doctor</th>
+            <th scope="col">movilidad</th>
+            <th scope="col">contraindicaciones</th>
+            <th scope="col">observacion</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let paciente of pacientes">
+            <th scope="row">{{paciente.id}}</th>
+            <td>{{paciente.terapeuta}}</td>
+            <td>{{paciente.nombre}}</td>
+            <td>{{paciente.domicilio}}</td>
+            <td>{{paciente.fecha_naciemiento}}</td>
+            <td>{{paciente.instruccion}}</td>
+            <td>{{paciente.ocupacion_anterior}}</td>
+            <td>{{paciente.pasatiempo}}</td>
+            <td>{{paciente.fecha_ingreso}}</td>
+            <td>{{paciente.motivo_ingreso}}</td>
+            <td>{{paciente.estado_civil}}</td>
+            <td>{{paciente.nombre_conyuge}}</td>
+            <td>{{paciente.celular_conyuge}}</td>
+            <td>{{paciente.nombre_familiar_1}}</td>
+            <td>{{paciente.parentesco_familiar_1}}</td>
+            <td>{{paciente.direccion_familiar_1}}</td>
+            <td>{{paciente.celular_familiar_1}}</td>
+            <td>{{paciente.nombre_familiar_2}}</td>
+            <td>{{paciente.parentesco_familiar_2}}</td>
+            <td>{{paciente.direccion_familiar_2}}</td>
+            <td>{{paciente.celular_familiar_2}}</td>
+            <td>{{paciente.diagnostico}}</td>
+            <td>{{paciente.medicamento}}</td>
+            <td>{{paciente.doctor}}</td>
+            <td>{{paciente.movilidad}}</td>
+            <td>{{paciente.contraindicaciones}}</td>
+            <td>{{paciente.observacion}}</td>
+            <td><button type="button" name="button" class="btn btn-primary" [routerLink]="['/pacientes/form',paciente.id]">Editar</button></td>
+            <td><button type="button" name="eliminar" class="btn btn-danger" (click)=delete(paciente)>Eliminar</button></td>
+        </tr>
+    </tbody>
+    </table>
+</div>

@@ -8,11 +8,15 @@ import { PuntajesComponent } from './puntajes/puntajes.component';
 import { FormTerapeutaComponent } from './terapeutas/form-terapeuta.component';
 import { Routes,RouterModule, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { FormPacienteComponent } from './pacientes/form-paciente.component';
 const routes:Routes=[
   {path:'',redirectTo:'/terapeutas',pathMatch:'full'},
   {path:'terapeutas',component:TerapeutasComponent},
   {path:'terapeutas/form',component:FormTerapeutaComponent},
   {path:'terapeutas/form/:id',component:FormTerapeutaComponent},
+  {path:'pacientes',component:PacientesComponent},
+  {path:'pacientes/form',component:FormPacienteComponent},
+  {path:'pacientes/form/:id',component:FormPacienteComponent},
 
 ]
 @NgModule({
@@ -21,7 +25,8 @@ const routes:Routes=[
     TerapeutasComponent,
     PacientesComponent,
     PuntajesComponent,
-    FormTerapeutaComponent
+    FormTerapeutaComponent,
+    FormPacienteComponent
   ],
   imports: [
     BrowserModule,

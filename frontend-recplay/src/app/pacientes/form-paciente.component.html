@@ -1,0 +1,202 @@
+<div class="container">
+    <div class="card-body">
+        <h5 class="card-title">
+            {{titulo}}
+        </h5>
+        
+        
+        
+        
+        
+        
+        
+        
+        <form>
+            <div class="form-groip row">
+                <label for="idterapeuta" class="col-form-label col-sm-2">Terapeuta</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="idterapeuta"[(ngModel)]="paciente.terapeuta">
+                </div>
+            </div>
+            <div class="form-groip row">
+                <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nombre"[(ngModel)]="paciente.nombre">
+                </div>
+            </div>
+            <div class="form-groip row">
+                <label for="domicilio" class="col-form-label col-sm-2">Domicilio</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="domicilio"[(ngModel)]="paciente.domicilio">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="fecha_naciemiento" class="col-form-label col-sm-2">Fecha naciemiento</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" name="fecha_naciemiento"[(ngModel)]="paciente.fecha_naciemiento">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="instruccion" class="col-form-label col-sm-2">Instrucción</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="instruccion"[(ngModel)]="paciente.instruccion">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="ocupacion_anterior" class="col-form-label col-sm-2">Ocupacion anterior</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="ocupacion_anterior"[(ngModel)]="paciente.ocupacion_anterior">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="pasatiempo" class="col-form-label col-sm-2">Pasatiempo</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="pasatiempo"[(ngModel)]="paciente.pasatiempo">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="fecha_ingreso" class="col-form-label col-sm-2">Fecha ingreso</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" name="fecha_ingreso"[(ngModel)]="paciente.fecha_ingreso">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="motivo_ingreso" class="col-form-label col-sm-2">Motivo ingreso</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="motivo_ingreso"[(ngModel)]="paciente.motivo_ingreso">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="estado_civil" class="col-form-label col-sm-2">Estado civil</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="estado_civil"[(ngModel)]="paciente.estado_civil">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="nombre_conyuge" class="col-form-label col-sm-2">Nombre conyuge</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nombre_conyuge"[(ngModel)]="paciente.nombre_conyuge">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="celular_conyuge" class="col-form-label col-sm-2">Celular del conyuge</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="celular_conyuge"[(ngModel)]="paciente.celular_conyuge">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="nombre_familiar_1" class="col-form-label col-sm-2">Nombre del familiar 1</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nombre_familiar_1"[(ngModel)]="paciente.nombre_familiar_1">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="parentesco_familiar_1" class="col-form-label col-sm-2">Parentesco de familiar 1</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="parentesco_familiar_1"[(ngModel)]="paciente.parentesco_familiar_1">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="direccion_familiar_1" class="col-form-label col-sm-2">Direccion de familiar 1</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="direccion_familiar_1"[(ngModel)]="paciente.direccion_familiar_1">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="celular_familiar_1" class="col-form-label col-sm-2">Celular de familiar 1</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="celular_familiar_1"[(ngModel)]="paciente.celular_familiar_1">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="nombre_familiar_2" class="col-form-label col-sm-2">Nombre del familiar 2</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nombre_familiar_2"[(ngModel)]="paciente.nombre_familiar_2">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="parentesco_familiar_2" class="col-form-label col-sm-2">Parentesco de familiar 2</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="parentesco_familiar_2"[(ngModel)]="paciente.parentesco_familiar_2">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="direccion_familiar_2" class="col-form-label col-sm-2">Direccion de familiar 2</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="direccion_familiar_2"[(ngModel)]="paciente.direccion_familiar_2">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="celular_familiar_2" class="col-form-label col-sm-2">Celular de familiar 2</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="celular_familiar_2"[(ngModel)]="paciente.celular_familiar_2">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="diagnostico" class="col-form-label col-sm-2">Diagnóstico</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="diagnostico"[(ngModel)]="paciente.diagnostico">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="medicamento" class="col-form-label col-sm-2">Medicamento</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="medicamento"[(ngModel)]="paciente.medicamento">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="doctor" class="col-form-label col-sm-2">Doctor</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="doctor"[(ngModel)]="paciente.doctor">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="movilidad" class="col-form-label col-sm-2">Movilidad</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="movilidad"[(ngModel)]="paciente.movilidad">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="contraindicaciones" class="col-form-label col-sm-2">Contraindicaciones</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="contraindicaciones"[(ngModel)]="paciente.contraindicaciones">
+                </div>
+            </div>
+
+            <div class="form-groip row">
+                <label for="observacion" class="col-form-label col-sm-2">Observacion</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="observacion"[(ngModel)]="paciente.observacion">
+                </div>
+            </div>
+
+            <button class="btn btn-success" role="button" (click)='create()' *ngIf="!paciente.id else elseBlock">Registrar</button>
+            <ng-template #elseBlock>
+                <button class="btn btn-success" role="button" (click)='update()'>Actualizar</button>
+            </ng-template>
+
+        </form>
+    </div>
+</div>
